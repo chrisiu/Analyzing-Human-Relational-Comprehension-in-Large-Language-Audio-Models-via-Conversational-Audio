@@ -71,7 +71,7 @@ corrupted_files = [
 ]
 
 files_to_clean = [
-    "audiofiles_transcripts_merged.csv",
+    "audiofiles_transcripts.csv",
 ]
 
 print("\nREMOVING CORRUPTED AUDIO FILES\n")
