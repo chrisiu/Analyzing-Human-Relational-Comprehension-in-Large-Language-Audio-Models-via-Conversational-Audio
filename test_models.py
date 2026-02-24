@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
 import os
 
-CACHE_DIR = "/media/volume/AudioRelationship2B/Model_Cache"
+# CACHE_DIR = INSERT YOUR CACHE DIR
 os.environ['HF_HOME'] = CACHE_DIR
 os.environ['TRANSFORMERS_CACHE'] = CACHE_DIR
 os.environ['HF_DATASETS_CACHE'] = CACHE_DIR
