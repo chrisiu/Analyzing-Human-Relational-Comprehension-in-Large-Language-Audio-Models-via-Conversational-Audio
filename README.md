@@ -24,7 +24,6 @@ This project investigates how well state-of-the-art audio language models can id
 | `download_audio.py` | Downloads audio files from Meta Seamless Interaction dataset |
 | `merge_and_clean.py` | Combines all Seamless Interaction CSVs into one metadata file |
 | `clean_audio_data.py` | Removes rows with missing transcripts and normalizes relationship labels (to be used AFTER audio downloads) |
-| `check_corrupted.py` | Identifies and removes corrupted audio files (194 files at 44 bytes) |
 
 ### Sampling Scripts
 
@@ -38,7 +37,7 @@ This project investigates how well state-of-the-art audio language models can id
 | Script | Description |
 |--------|-------------|
 | `test_models.py` | Tests loading of all LALMs to verify installation |
-| `llm_easy_hard.py` | Evaluates GPT-4o-mini on transcripts to establish text-only baseline |
+| `llm_easy_hard.py` | Evaluates GPT-5-mini on transcripts to establish text-only baseline |
 | `lalm_relationships.py` | Runs LALM predictions for relationship type classification (zero-shot) |
 | `lalm_relationships_few_shot.py` | Runs LALM predictions with few-shot examples (8 examples, one per class) |
 | `lalm_nat_imp.py` | Classifies audio as naturalistic vs. improvised |
