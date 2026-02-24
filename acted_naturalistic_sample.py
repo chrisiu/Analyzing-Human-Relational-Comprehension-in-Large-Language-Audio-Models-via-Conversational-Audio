@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-INPUT_PATH = "/Users/chrishaleas/Desktop/IU Research/meta_csvs/audiofiles_transcripts_merged.csv"
+INPUT_PATH = "audiofiles_transcripts_merged.csv"
 df = pd.read_csv(INPUT_PATH, low_memory=False)
 
 nat_df = df[df['label'] == 'naturalistic'].copy()
@@ -40,6 +40,6 @@ final_subset = pd.concat([final_nat, final_imp]).sample(frac=1, random_state=42)
 print(f"Total Rows: {len(final_subset)}")
 print(f"Naturalistic Count: {len(final_nat)} | Improvised Count: {len(final_imp)}")
 
-OUTPUT_PATH = "/Users/chrishaleas/Desktop/IU Research/meta_csvs/lalm_final_1500_mixed.csv"
+OUTPUT_PATH = "lalm_nat_imp_relationships.csv"
 final_subset.to_csv(OUTPUT_PATH, index=False)
 print(f"\nFile saved successfully to: {OUTPUT_PATH}")
