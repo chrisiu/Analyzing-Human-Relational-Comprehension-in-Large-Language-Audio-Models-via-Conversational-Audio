@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-INPUT_CSV =  "fully_merged_daset.csv"
-OUTPUT_CSV = "fully_merged_daset.csv"
+INPUT_CSV =  "fully_merged_dataset.csv"
+OUTPUT_CSV = "fully_merged_dataset.csv"
 
 MODEL = "gpt-4o-mini"
 BATCH_SIZE = 10
