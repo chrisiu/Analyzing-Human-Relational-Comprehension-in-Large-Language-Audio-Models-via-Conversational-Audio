@@ -47,12 +47,19 @@ for key, g in df.groupby("interaction_key"):
 
         interaction_rows.append({
             "mixed_audio_filename": f"{key}_mixed.wav",
-            "file_id_a": a["file_id"], "file_id_b": b["file_id"],
+            "file_id_a": a["file_id"], 
+            "file_id_b": b["file_id"],
             "label": a["label"],
-            "relationship_detail_a": a["relationship_detail"], "relationship_detail_b": b["relationship_detail"],
-            "ipc_a": a["ipc_a"], "ipc_b": b["ipc_b"],
+            "relationship_detail_a": a["relationship_detail"], 
+            "relationship_detail_b": b["relationship_detail"],
+            "acted_relationship_a": "",
+            "acted_relationship_b": "",
+            "ipc_a": a["ipc_a"], 
+            "ipc_b": b["ipc_b"],
             "participant_a_prompt_text": a["participant_a_prompt_text"],
-            "participant_b_prompt_text": b["participant_b_prompt_text"]
+            "participant_b_prompt_text": b["participant_b_prompt_text"],
+            "transcript_a": "",
+            "transcript_b": ""
         })
 
 pd.DataFrame(interaction_rows).to_csv('fully_merged_dataset.csv', index=False)
