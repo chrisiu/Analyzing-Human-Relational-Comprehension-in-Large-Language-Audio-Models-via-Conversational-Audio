@@ -15,7 +15,7 @@ import gc
 import time
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-CACHE_DIR = # INSERT YOUR MODEL CACHE HERE
+CACHE_DIR = # INSERT YOUR CACHE DIRECTORY HERE
 os.environ['HF_HOME'] = CACHE_DIR
 os.environ['TRANSFORMERS_CACHE'] = CACHE_DIR
 os.environ['HF_DATASETS_CACHE'] = CACHE_DIR
