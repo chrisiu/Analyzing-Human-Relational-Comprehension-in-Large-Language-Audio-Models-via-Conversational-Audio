@@ -7,7 +7,7 @@ from sklearn.metrics import f1_score, classification_report, confusion_matrix
 load_dotenv()
 
 INPUT_CSV = "fully_merged_dataset.csv"
-OUTPUT_CSV = "audiofiles_transcripts_gpt5_eval.csv"
+OUTPUT_CSV = "audiofiles_gpt5_eval.csv"
 LOG_FILE = "gpt5_predictions_log.txt"
 
 MODEL = "gpt-5-mini"
