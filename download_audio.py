@@ -8,7 +8,7 @@ from scipy.io import wavfile
 from seamless_interaction.fs import DatasetConfig, SeamlessInteractionFS
 
 CSV_PATH = Path("fully_merged_dataset.csv")
-OUTPUT_CSV = Path("fully_merged_dataset.csv")
+OUTPUT_CSV = Path("audiofiles_transcripts.csv")
 OUTPUT_AUDIO_DIR = Path("./audio_files")
 LOCAL_DOWNLOAD_DIR = Path("./tmp_downloads")
 
