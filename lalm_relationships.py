@@ -1,10 +1,7 @@
 import re
 import types
 import os
-os.environ['HF_HOME'] = "Model_Cache"
-os.environ['TRANSFORMERS_CACHE'] = "Model_Cache"
-os.environ['HF_DATASETS_CACHE'] = "Model_Cache"
-os.environ['TORCH_HOME'] = "Model_Cache"
+
 
 import json
 import pandas as pd
@@ -18,7 +15,11 @@ import gc
 import time
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-# CACHE_DIR = INSERT YOUR CACHE HERE
+CACHE_DIR = # INSERT YOUR MODEL CACHE HERE
+os.environ['HF_HOME'] = CACHE_DIR
+os.environ['TRANSFORMERS_CACHE'] = CACHE_DIR
+os.environ['HF_DATASETS_CACHE'] = CACHE_DIR
+os.environ['TORCH_HOME'] = CACHE_DIR
 
 INPUT_CSV = "lalm_relationships.csv"
 OUTPUT_CSV = "lalm_relationships_predictions.csv"
