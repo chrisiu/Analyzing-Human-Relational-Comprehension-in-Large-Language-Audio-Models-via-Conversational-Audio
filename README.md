@@ -13,7 +13,7 @@ This project investigates how well state-of-the-art audio language models can id
 - **AudioFlamingo3** (NVIDIA)
 - **Qwen2.5-Omni-7B** (Alibaba)
 - **R1-AQA** (MiSpeech)
-- **GPT-4o-mini** (OpenAI) - text-based baseline
+- **GPT-4o-mini** (OpenAI) - text-based evaluations for creating difficulty-level metric
 
 ## Repository Structure
 
@@ -46,12 +46,12 @@ This project investigates how well state-of-the-art audio language models can id
 
 ## Setup
 
-### Requirements
+### Requirements for LALMs
 ```bash
 pip install -r requirements.txt
 ```
 
-**Key dependencies:**
+**Other Script Dependencies:**
 - `transformers` (Hugging Face)
 - `torch` (PyTorch with CUDA support)
 - `librosa` (audio processing)
@@ -63,7 +63,6 @@ pip install -r requirements.txt
 
 - **GPU:** NVIDIA A100 40GB (or equivalent)
 - **Storage:** ~500GB for audio files and model cache
-- **RAM:** 64GB+ recommended
 
 ## Dataset
 
