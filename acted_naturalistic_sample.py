@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-INPUT_PATH = "audiofiles_transcripts_merged.csv"
+INPUT_PATH = "audiofiles_transcripts.csv"
 df = pd.read_csv(INPUT_PATH, low_memory=False)
 
 nat_df = df[df['label'] == 'naturalistic'].copy()
